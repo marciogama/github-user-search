@@ -1,0 +1,23 @@
+.main-nav {
+    position: absolute;
+    width: 1440px;
+    height: 62px;
+    left: 0px;
+    top: 0px;
+    background-color: #1890FF;
+}
+
+.navbar-logo-text{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 41px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+}
+
+.nav-logo-link {
+    text-decoration: none;
+}
