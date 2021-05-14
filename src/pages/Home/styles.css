@@ -1,0 +1,31 @@
+.home-container {
+    margin-top: 117px;
+}
+
+.home-title {
+    /* background-color: aqua; */
+    padding: 62px 740px 24px 120px;
+}
+
+.text-title {
+    font-size: 48px;
+    font-size: 48px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #062847;
+}
+
+.home-text {
+    padding: 0px 600px 353px 120px;
+}
+
+.text-subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #5A6774;
+    margin-bottom: 48px;
+}

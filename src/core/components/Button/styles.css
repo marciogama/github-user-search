@@ -1,0 +1,31 @@
+.simpleBtn {
+    height: 40px;
+    width: 101px;
+    display: flex;
+    text-align: center;
+}
+
+.textButton {
+    margin-left: 0px;
+    background-color: #1890FF;
+    height: 40px;
+    width: 101px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.textButton:hover {
+    transition-delay: 0.2s;
+}
+.no-outline {
+    border: none;
+    outline: none;
+}
+
+.home-link {
+    text-decoration: none;
+}

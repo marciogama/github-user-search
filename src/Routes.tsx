@@ -12,11 +12,11 @@ const Routes = () => (
             <Route path="/" exact>
                 <Home />
             </Route>
-            <Route path="/after">
-                <After />
-            </Route>
             <Route path="/before">
                 <Before />
+            </Route>
+            <Route path="/after">
+                <After />
             </Route>
         </Switch>
     </BrowserRouter>
