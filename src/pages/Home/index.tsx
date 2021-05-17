@@ -21,7 +21,7 @@ const Home = () => (
             <br />
             Mateusz Wierzbicki: antforfigma@gmail.com
             </p>
-            <Link to="/before" className="home-link">
+            <Link to="/search" className="home-link">
                 <SimpleButton text="Começar" />
             </Link>
         </div>

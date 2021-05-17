@@ -7,7 +7,6 @@ const Navbar = () => (
             <Link to="/" className="nav-logo-link">
                 <h4 className="navbar-logo-text">Bootcamp DevSuperior</h4>
             </Link>
-
         </div>
     </nav>
 );
