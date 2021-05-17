@@ -6,13 +6,29 @@ import './styles.css';
 
 const BASE_URL = 'https://api.github.com/users';
 
+type Users = 	{
+    "avatar_url": string;
+    "company": string;
+    "blog": string;
+    "location": string;
+    "public_repos": Number;
+    "followers": Number,
+    "following": Number,
+    "created_at": string
+}
+
 function Search() {
     const [searchValue, setSearchValue] = useState('');
+    const [userData, setUserData] = useState<Users>();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        console.log(`${BASE_URL}/${searchValue}`)
+        event.preventDefault();
+        setUserData(undefined);
+        
         axios(`${BASE_URL}/${searchValue}`)
+            .then(response => setUserData(response.data))
+            .catch(() => console.error('Houve um erro ao buscar os dados !!!'))
+
     }
     return (
         <div className="container-search">
@@ -28,6 +44,17 @@ function Search() {
                 />
 
                 <SimpleButton text="Encontrar" />
+
+                {userData && (
+                    <>
+                        <div>
+                            <strong>localidade</strong>
+                            <span>{userData.location}</span>
+                        </div>    
+                    </>    
+                )}
+
+                
 
             </form>
 
