@@ -1,24 +1,148 @@
-.user-card {
+.container-information {
     margin-top: 54px;
     width: 1251px;
     height: 387px;
     background: #f5f5f5;
     border-radius: 8px;
-    display: flex;
-    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 314px 893px;
+    grid-template-rows: 387px 387px;
+    grid-template-areas: "colImage colInfo";
+    grid-column-gap: 44px ;
 }
 
 .user-image {
-    width: 284;
-    height: 280;
+    width: 284px;
+    height: 280px;
     padding-top: 23px;
     padding-left: 30px;
 }
 
+.button-see-profile {
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
 .user-information-one {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+    padding-top: 23px;
+    font-weight: normal;
+    font-size: 12px;    
+    line-height: 20px;
+    color: #595959;
 }
+
+.user-posted {
+    width: 167px;
+    height: 22px;
+    padding: 1px 14px 1px 14px;
+    margin-right: 8px;
+    background: #ffffff;
+    border: 1px solid #d9D9D9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.span-user-information {
+    padding-left: 3px;
+    font-weight: normal;
+}   
+
+.user-followers {
+    width: 118px;
+    height: 22px;
+    padding: 1px 14px 1px 14px;
+    margin-right: 8px;
+    background: #ffffff;
+    border: 1px solid #d9D9D9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.user-following {
+    width: 108px;
+    height: 22px;
+    padding: 1px 14px 1px 14px;
+    background: #ffffff;
+    border: 1px solid #d9D9D9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
 .user-information-two {
-    
+    width: 870px;
+    height: 247px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: #ffffff;
+}
+
+.information-two-title {
+    width: 534px;
+    height: 28;
+    padding-top: 8px;
+    padding-left: 14px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1890FF;
+    margin-bottom: 19px;
+}
+
+.information-two-company {
+    width: 839px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 14px;
+    color: #737373;
+}
+
+.information-two-website {
+    width: 839px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 14px;
+    color: #737373;
+}
+
+.information-two-location {
+    width: 839px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 14px;
+    color: #737373;
+}
+
+.information-two-membersince {
+    width: 839px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 14px;
+    color: #737373;
 }
