@@ -31,16 +31,13 @@ function Search() {
                     value={searchValue}
                     onChange={event => setSearchValue(event.target.value)}
                 />
-
-                <SimpleButton text="Encontrar" />
+                <div className="button-find">
+                    <SimpleButton text="Encontrar" />
+                </div>
 
                 {userData && (
                     <>
-                        <div>
-                            <strong>localidade</strong>
-                            <span>{userData?.location}</span>
-                        </div>    
-                        <UserCard />
+                        <UserCard user={userData} />
                     </>    
                 )}
 

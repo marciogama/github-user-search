@@ -27,14 +27,19 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-left: 94px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 17px;
 }
 
 .input-search::placeholder {
-    
     padding-top: calc(50% - 24px/2);
     padding-left: 17px;
     color: #BFBFBF;
+}
+
+.button-find {
+    
+    margin-left: 94px;
 }
