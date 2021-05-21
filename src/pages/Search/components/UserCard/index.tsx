@@ -2,7 +2,8 @@ import React from 'react';
 import SimpleButton from '../../../../core/components/Button';
 import { User } from '../../../../core/types/User';
 
-import './styles.css'
+import './styles.css';
+import dayjs from 'dayjs';
 
 type Props = {
     user: User
@@ -58,7 +59,7 @@ const UserCard = ({ user }: Props) => (
                 </div>
                 <div className="information-two-membersince">Membro desde:
                     <span className="span-user-information">
-                        {user.created_at}
+                        {dayjs(user.created_at).format('DD/MM/YYYY')}
                     </span>
                 </div>
             </div>
